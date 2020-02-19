@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">	
+	<title>WEATHER</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="controls">
+			<div class="container">
+				<div class="controls__row">
+					<div class="controls__button">						
+						<button class="controls__reload" type="button">
+							<img src="../img/controls__reload.png" alt="">
+						</button>
+						<div class="controls__divlanguage">
+							<select name="color" class="controls__language">
+								<option value="ru" class="controls__value">ru</option>							
+								<option selected value="en" class="controls__language">en</option>
+							</select>
+						</div>
+						<button class="controls__temperatureF" type="button">°F</button>
+						<button class="controls__temperatureC" type="button">°С</button>						
+					</div>
+					<div class="search">
+						<input type="text" placeholder="Search city or ZIP" class="search__field">
+						<button class="search__voice"><img src="../img/voice__search.png" alt="" class="search__imgvoice"></button>
+						<button class="search__button">search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="city">
+			<div class="container">
+				<div class="city__row">
+					<div class="city__data">
+						<div class="city__name">Minsk, Belarus</div>
+						<div class="city__date-row">
+							<div class="city__date">Mon 28 October</div>
+							<div class="city__time">17:23</div>
+						</div>						
+						<div class="city__description">
+							<div class="city__description-value">10</div>
+							<img src="../img/description__image.png" alt="" class="city__description-image">
+							<div class="city__description-overcast">
+								<p>overcast</p>
+								<div class="city__description-feels">
+									<span>Feels like: </span>
+									<div class="city__description-feelsvalue">7</div>
+									<span>°</span>
+								</div>
+								<div class="city__description-wind">
+									<span>Wind: </span>
+									<div class="city__description-wind-value">6</div>
+									<span class="city__description-ms">m/s</span>
+								</div>
+								<div class="city__description-humidity">
+									<span>Humidity: </span>
+									<div class="city__description-humidity-value">83</div>
+									<span>%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="city__geomap"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="forecast">
+			<div class="container">
+				<div class="forecast__row">
+					<div class="forecast__items">
+						<div class="forecast__day">
+							<div class="forecast__title">Tuesday</div>
+							<div class="forecast__temperature temperature">
+								<div class="temperature__value"><span class="temperature__value-num">7</span>°</div>
+								<img src="../img/temperature__image1.png" alt=""  class="temperature__image">
+							</div>
+						</div>
+						<div class="forecast__day">
+							<div class="forecast__title">Wednesday</div>
+							<div class="forecast__temperature temperature">
+								<div class="temperature__value"><span class="temperature__value-num">7</span>°</div>
+								<img src="../img/temperature__image1.png" alt=""  class="temperature__image">
+							</div>
+						</div>
+						<div class="forecast__day">
+							<div class="forecast__title">Tuesday</div>
+							<div class="forecast__temperature temperature">
+								<div class="temperature__value"><span class="temperature__value-num">7</span>°</div>
+								<img src="../img/temperature__image1.png" alt=""  class="temperature__image">
+							</div>
+						</div>
+											
+					</div>
+					<div class="forecast__geomap">
+						<div class="forecast__latitude">
+							<span>Latitude: </span>
+							<span>53°54'</span>
+						</div>
+						<div class="forecast__londitude">
+							<span>Longitude: </span>
+							<span>27°34'</span>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,406 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+body {
+  font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.wrapper {
+  background: #333 url("../img/bg.png") no-repeat center/cover;
+  max-width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 40px auto 95px 90px; }
+
+.container {
+  max-width: 1220px;
+  margin: 0px auto;
+  padding: 0 20px; }
+
+.controls {
+  padding: 40px 0 50px; }
+
+.controls__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.controls__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.controls__reload {
+  background: rgba(180, 184, 187, 0.4);
+  border-radius: 5px;
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.controls__divlanguage {
+  background: rgba(180, 184, 187, 0.4);
+  border-radius: 5px;
+  width: 71px;
+  height: 44px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-right: 10px; }
+
+.controls__language {
+  background: rgba(180, 184, 187, 0);
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase; }
+
+.controls__temperatureF {
+  width: 44px;
+  height: 44px;
+  background: rgba(76, 82, 85, 0.4);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4); }
+
+.controls__temperatureC {
+  width: 44px;
+  height: 44px;
+  background: rgba(174, 181, 185, 0.5);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */ }
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */ }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */ }
+
+::-moz-selection {
+  color: #fff;
+  background: #4c5255; }
+
+::selection {
+  color: #fff;
+  background: #4c5255; }
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.search__field {
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 15px;
+  background: rgba(76, 82, 85, 0.4);
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px; }
+
+.search__voice {
+  background: rgba(76, 82, 85, 0.4);
+  padding-right: 17px; }
+
+.search__button {
+  background: rgba(174, 181, 185, 0.5);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 101px; }
+
+.city__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.city__data {
+  max-width: 600px; }
+
+.city__name {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.city__date-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.city__date {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-right: 18px; }
+
+.city__time {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF; }
+
+.city__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.city__description-value {
+  font-weight: bold;
+  font-size: 306px;
+  line-height: 373px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 20px 0 0 0; }
+
+.city__description-image {
+  margin-left: -25px;
+  max-width: 162px;
+  max-height: 102px; }
+
+.city__description-overcast {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 175px;
+  height: 137px;
+  margin: 180px -40px auto -65px; }
+
+.city__description-feels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.city__description-feelsvalue {
+  margin-left: 5px; }
+
+.city__description-wind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.city__description-wind-value {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.city__description-ms {
+  text-transform: none; }
+
+.city__description-humidity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.city__description-humidity-value {
+  margin-left: 5px; }
+
+.city__geomap {
+  width: 375px;
+  height: 375px;
+  background: url("../img/map.png") no-repeat;
+  border-radius: 50px;
+  margin-top: 90px; }
+
+.forecast__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.forecast__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.forecast__day {
+  margin-right: 52px; }
+
+.forecast__title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.forecast__temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.forecast__temperature p {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 98px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 5px; }
+
+.temperature__value {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 98px;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.temperature__image {
+  margin-top: 15px;
+  width: 65px;
+  height: 42px; }
+
+.forecast__geomap {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  text-transform: capitalize;
+  color: #FFFFFF; }
+
+.forecast__latitude {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.forecast__latitude p {
+  margin-left: 5px; }
+
+.forecast__londitude {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.forecast__londitude p {
+  margin-left: 5px; }

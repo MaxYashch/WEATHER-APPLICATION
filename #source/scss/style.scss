@@ -1,0 +1,285 @@
+@import "nullstyle";
+
+body {
+	font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper { 
+	background: #333 url('../img/bg.png') no-repeat center / cover;	
+	max-width: 1440px;
+	height: 800px;
+	margin: 0 auto;
+	padding: 40px auto 95px 90px;
+}
+
+.container{
+	max-width: 1220px;
+	margin: 0px auto;
+	padding: 0 20px;
+}
+
+.controls {
+	padding: 40px 0 50px;
+ }
+
+.controls__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.controls__button {
+	display: flex;
+}
+
+.controls__reload {
+	background: rgba(180, 184, 187, 0.4);
+	border-radius: 5px;
+	width: 44px;
+	height: 44px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controls__divlanguage {
+	background: rgba(180, 184, 187, 0.4);
+	border-radius: 5px;
+	width: 71px;
+	height: 44px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-right: 10px;
+}
+
+.controls__language {
+	background: rgba(180, 184, 187, 0);
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+}
+
+.controls__temperatureF {
+	width: 44px;
+	height: 44px;	
+	background: rgba(76, 82, 85, 0.4);
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;	
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.controls__temperatureC {
+	width: 44px;
+	height: 44px;	
+	background: rgba(174, 181, 185, 0.5);
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;	
+	color: #FFFFFF;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #fff;
+	opacity: 1; /* Firefox */
+}
+
+::selection {
+	color: #fff;
+	background: #4c5255;
+}
+
+.search {
+	display: flex;
+}
+
+.search__field {
+	font-size: 14px;
+	line-height: 17px;
+	padding-left: 15px;
+	background: rgba(76, 82, 85, 0.4);	
+	color: #fff;
+	box-sizing: border-box;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;	
+}
+
+.search__voice {
+	background: rgba(76, 82, 85, 0.4);
+	padding-right: 17px;
+}
+
+.search__button {
+	background: rgba(174, 181, 185, 0.5);
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	text-transform: uppercase;		
+	color: #FFFFFF;
+	width: 101px;
+}
+
+.city__row {
+	display: flex;
+	justify-content: space-between;
+}
+.city__data {
+	max-width: 600px;
+}
+
+.city__name {
+	font-weight: bold;
+	font-size: 44px;
+	line-height: 54px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.city__date-row{
+	display: flex;
+}
+.city__date {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+	margin-right: 18px;
+}
+.city__time{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+}
+.city__description {	
+	display: flex;
+}
+.city__description-value {
+	font-weight: bold;
+	font-size: 306px;
+	line-height: 373px;
+	text-transform: uppercase;	
+	color: #FFFFFF;
+	padding: 20px 0 0 0;
+}
+.city__description-image {
+	margin-left: -25px;
+	max-width: 162px;
+	max-height: 102px;
+
+}
+.city__description-overcast {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	width: 175px;
+	height: 137px;
+	margin: 180px -40px auto -65px;
+}
+.city__description-feels {
+	display: flex;
+}
+.city__description-feelsvalue {
+	margin-left: 5px;
+}
+.city__description-wind {
+	display: flex;
+}
+.city__description-wind-value {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.city__description-ms {
+	text-transform: none;
+}
+.city__description-humidity {
+	display: flex;	
+}
+.city__description-humidity-value {
+	margin-left: 5px;
+}
+.city__geomap {
+	width: 375px;
+	height: 375px;
+	background: url('../img/map.png') no-repeat;
+	border-radius: 50px;
+	margin-top: 90px;
+}
+
+.forecast__row {
+	display: flex;
+	justify-content: space-between;
+}
+.forecast__items {
+	display: flex;
+}
+.forecast__day {
+	margin-right: 52px;
+}
+.forecast__title {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 27px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.forecast__temperature {
+	display: flex;
+}
+.forecast__temperature p {
+	font-weight: 600;
+	font-size: 80px;
+	line-height: 98px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-right: 5px;
+}
+.temperature__value {
+	font-weight: 600;
+	font-size: 80px;
+	line-height: 98px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.temperature__image {
+	margin-top: 15px;
+	width: 65px;
+	height: 42px;
+}
+.forecast__geomap {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: right;
+	text-transform: capitalize;
+	color: #FFFFFF;}
+.forecast__latitude {
+	display: flex;	
+	justify-content: flex-end;
+}
+.forecast__latitude p {	
+	margin-left: 5px;	
+}
+.forecast__londitude {
+	display: flex;	
+	justify-content: flex-end;
+}
+.forecast__londitude p {
+	margin-left: 5px;
+}
