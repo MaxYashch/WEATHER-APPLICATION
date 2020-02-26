@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper { 
-	background: #333 url('../img/bg.png') no-repeat center / cover;	
+	background: #333 url('../../img/bg.png') no-repeat center / cover;	
 	max-width: 1440px;
 	height: 800px;
 	margin: 0 auto;
@@ -217,7 +217,7 @@ body {
 .city__geomap {
 	width: 375px;
 	height: 375px;
-	background: url('../img/map.png') no-repeat;
+	background: url('../../img/map.png') no-repeat;
 	border-radius: 50px;
 	margin-top: 90px;
 }
